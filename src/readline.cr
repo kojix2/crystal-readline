@@ -10,6 +10,7 @@ lib LibReadline
   fun read_history(fname : UInt8*) : Int
   fun rl_bind_key(key : Int, f : Int, Int -> Int) : Int
   fun rl_unbind_key(key : Int) : Int
+  fun rl_inseert_text(text : UInt8*) : Int
 
   alias CPP = (UInt8*, Int, Int) -> UInt8**
 
